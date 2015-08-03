@@ -42,13 +42,16 @@ The four digit code (replacing the xxxx) is your Church ID
 There are two ways you can insert your button.
 
 1. Insert the WP Tithely Widget into one of your sidebars. You can insert your Church ID and the text you would like the button to display.
-1. You can insert the button into your page content using the shortcode [tithely]. it will use the Church ID and Button Text defined in the options unless you include a new phrase for the button text like: [tithely button_text="Donate Now"].
+1. You can insert the button into your page content using the shortcode [tithely]. it will use the Church ID and Button Text defined in the options unless you include a new phrase or ID like: [tithely button="Donate Now" id="12345"].
 
 = Is this secure? =
-
+Whilst Tithely processes payments securely - we recommend you only use the give button on  a page that is protected with SSL encryption. It's pretty cheap to add and usually costs around $30-50 a year depending on the service. Talk to your hosting provider to find out more details.
 
 
 == Changelog ==
+
+= 1.1 =
+* Update the shortcode to allow definition of Church ID.
 
 = 1.0 =
 * First Major Release.

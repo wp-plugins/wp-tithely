@@ -160,12 +160,17 @@ function wp_tithely_button( $atts) {
 	// Attributes
 	$shortcode_atts =  shortcode_atts(
 		array(
-			'button_text' => $tithely_button_text,
+			'button' => $tithely_button_text,
+			'id' => $tithely_church_sc_id,
 		), $atts );
+
+	if ($shortcode_atts['id'] !='') {
+		$tithely_church_id = $shortcode_atts['id'];
+	}
 
     // Code
     if ($tithely_church_id!=''){
-    	 return '<button id="tithely-give-btn">' . $shortcode_atts['button_text'] . '</button>
+    	 return '<button id="tithely-give-btn">' . $shortcode_atts['button'] . '</button>
 		    <script>
 		      var config = {
 		        church_id : ' . $tithely_church_id . ',
