@@ -26,7 +26,7 @@ if ( ! defined( 'WPINC' ) ) {
 
 //Load Tithely Javascript
 function wp_tithely_scripts() {
-	wp_enqueue_script( 'tithely', 'https://tithe.ly/widget/give.js?1', array('jquery'), '1.0.0', true );
+	wp_enqueue_script( 'tithely', 'https://tithe.ly/widget/give.js?1', array('jquery'), '1.0.0', false );
 }
 
 add_action( 'wp_enqueue_scripts', 'wp_tithely_scripts' );
@@ -66,6 +66,12 @@ class TithelyOptions {
 					submit_button();
 				?>
 			</form>
+
+			<h2>Usage</h2>
+			<p>There are two ways you can insert your button.</p>
+
+			<p>1. Insert the WP Tithely Widget into one of your sidebars. You can insert your Church ID and the text you would like the button to display.</p>
+			<p>2. You can insert the button into your page content using the shortcode [tithely]. It will use the Church ID and Button Text defined in the options above, unless you include a new phrase or ID like: [tithely button="Donate Now" id="12345"]</p>.
 		</div>
 	<?php }
 
