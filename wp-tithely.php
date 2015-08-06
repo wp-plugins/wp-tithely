@@ -10,7 +10,7 @@
  * Plugin Name:       WP Tithely
  * Plugin URI:        http://www.jordesign.com
  * Description:       Tools to insert Tithely giving buttons into your WordPress site
- * Version:           1.0.0
+ * Version:           1.3
  * Author:            Jordan Gillman
  * Author URI:        http://www.jordesign.com
  * License:           GPL-2.0+
